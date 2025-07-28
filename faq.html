@@ -4,65 +4,100 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mosaic - Frequently Asked Questions</title>
+  <link rel="stylesheet" href="faq.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
   
 </head>
 <body>
-  <div class="container">
-    <h1>Frequently Asked Questions</h1>
-
-    <div class="faq-item">
-      <div class="faq-question"><strong>QST: Who can use the platform?</strong></div>
-      <div class="faq-answer">
-        Mosaic is a platform that connects traders with unsold clothes to designers who redesign the clothes for them. Our mission is to reduce textile waste, support sustainable fashion and promote local talent.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question"><strong>QST: Who can use the platform?</strong></div>
-      <div class="faq-answer">
-        Local traders and designers are directly involved in second-hand clothing upcycling.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question"><strong>QST: How do I submit an upcycling request?</strong></div>
-      <div class="faq-answer">
-        Register as a trader, browse the designer catalog, to pick out a design you are interested in. And then submit a request through your dashboard.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question"><strong>QST: Why can’t I find a certain designer?</strong></div>
-      <div class="faq-answer">
-        Designers with 10+ pending orders are temporarily hidden to maintain quality.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question"><strong>QST: What if my order is late?</strong></div>
-      <div class="faq-answer">
-        Check status in-app or contact support.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question"><strong>QST: How fast will I get my upcycled item?</strong></div>
-      <div class="faq-answer">
-        All orders are guaranteed to be completed within a maximum of 14 days.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question"><strong>QST: Who do I contact for help?</strong></div>
-      <div class="faq-answer">
-        Reach out to us through our “Contact us” page or email us at <a href="mailto:mosaic@info.com">mosaic@info.com</a>. We respond within 24 hours.
-      </div>
-    </div>
-
-    <div class="external-link">
-      For more information check out: <a href="https://alpha-mosaic.netlify.app/" target="_blank" rel="noopener noreferrer">https://alpha-mosaic.netlify.app/</a>
+  <div class="header">
+      <h1>FREQUENTLY ASKED QUESTIONS</h1>
+          <div class="topnav">
+            <a href="home.html">Overview | </a>
+            <a href="userguide.html">User guide | </a>
+            <a href="faq.html">FAQs |</a>
+            <a href="privacypage.html">Privacy policy | </a>
+            <a href="contacts.html">Contact us | </a>
+            <a href="termsandconditions.html">Terms and conditions</a>
+        </div>
+  </div>
+<div class="accordion-container">
+  <div class="accordion-item">
+    <button class="accordion-header"> <b>What is Mosaic?</b></button>
+    <div class="accordion-content">
+      <p> Mosaic is a platform that connects traders with unsold clothes to designers who redesign the clothes for them. Our mission is to reduce textile waste, support sustainable fashion and promote local talent.</p>
     </div>
   </div>
+
+  <div class="accordion-item">
+    <button class="accordion-header"><b>Who can use Mosaic?</b></button>
+    <div class="accordion-content">
+      <p>The platform is purposely for users who are either traders or designers. For traders, burdened with unsold clothes amongst their stocks and for designers, in need of jobs to make designs. Trough Mosaic, both local traders and designers are directly involved in second-hand clothing upcycling.</p>
+    </div>
+  </div>
+
+    <div class="accordion-item">
+       <button class="accordion-header"><b>How do I submit an upcycling request?</b></button>
+       <div class="accordion-content">
+           <p>Register as a trader, browse the designer catalog, to pick out a design you are interested in. And then submit a request through your dashboard.</p>
+       </div>
+    </div>
+
+    <div class="accordion-item">
+       <button class="accordion-header"><b>Why can’t I find a certain designer?</b></button>
+       <div class="accordion-content">
+           <p> Designers with 10+ pending orders are temporarily hidden to maintain quality.</p>
+       </div>
+    </div>
+
+    <div class="accordion-item">
+       <button class="accordion-header"><b>What if my order is late?</b></button>
+       <div class="accordion-content">
+           <p> Check status in-app or contact support.</p>
+       </div>
+    </div>
+
+    <div class="accordion-item">
+       <button class="accordion-header"><b>How long does it take to get back my upcycled item?</b></button>
+       <div class="accordion-content">
+           <p> All orders are guaranteed to be completed within a maximum of 14 days. In the case of any changes our support system will communicate within those 14 days.</p>
+       </div>
+    </div>
+ 
+    <div class="accordion-item">
+       <button class="accordion-header"><b>Who do I contact for help?</b></button>
+       <div class="accordion-content">
+        <p><a href="contacts.html">Reach us out through contact details provided in this page</a></p>
+           <p>For more information check out: <a href="https://alpha-mosaic.netlify.app/" target="_blank" rel="noopener noreferrer">https://alpha-mosaic.netlify.app/</a></p>
+       </div>
+    </div>    
+    
+</div>
+<footer>
+       <div class="footerItems">
+           <a href="privacypage.html">Privacy policy</a>
+           <a href="termsandconditions.html">Terms and conditions</a>
+           <a href="https://alpha-mosaic.netlify.app/">Mosaic informational website</a>
+             <i class="fa-solid fa-copyright" style="color: #050505;">2025, All rights reserved</i>
+       </div>
+</footer>
+
+<script>
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling; 
+    content.classList.toggle('active');
+    if (content.classList.contains('active')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    } else {
+      content.style.maxHeight = null;
+    }
+  });
+});
+</script>
+
 </body>
 </html>
+
